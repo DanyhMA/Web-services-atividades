@@ -1,0 +1,23 @@
+<c>A empresa solicitante entra com um dado especifico do cliente dentro de uma tag de 'request', para localizar o cliente com precisão</c>
+<?xml version="1.0" encoding="UTF-8"?>
+<soap:Envelope 
+xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+<soap:Body xmlns:m="http://www.empresa.com/consultaCliente">
+    <m:consultaClienteRequest>
+        <m:CPF></m:CPF>
+    </m:consultaClienteRequest>
+</soap:Body>
+</soap:Envelope>
+
+<c>A empresa emitente faz a busca em seu banco de dados a partir da informação que a empresa socilitante passou, e retorna com uma 'response' contendo os dados que ela possui do cliente</c>
+<?xml version="1.0" encoding="UTF-8"?>
+<soap:Envelope 
+xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+<soap:Body xmlns:m="http://www.empresa.com/consultaCliente">
+    <m:consultaClienteResponse>
+        <m:NOME></m:NOME>
+        <m:ENDERECO></m:ENDERECO>
+        <m:TELEFONE></m:TELEFONE>
+    </m:consultaClienteResponse>
+</soap:Body>
+</soap:Envelope>
