@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>CRUD</title>
+    
+</head>
+
+<body>
+    <h1>Estoque de livros</h1>
+    <section id="table">
+        <form method="POST">
+            <div id="input-data">
+                <input id="titulo" class="input-text" placeholder="Titulo" type="text" required />
+                <input id="autor" class="input-text" placeholder="Autor" type="autor" required />
+                <input id="ISBN" class="input-text" placeholder="ISBN" type="number" required />
+                <input class="input-btn" type="submit" value="Enviar" onclick="addToTable()" />
+            </div>
+        </form>
+        <table id="myTable">
+            <tr id="0">
+                <th>ID</th>
+                <th>Titulo</th>
+                <th>Autor</th>
+                <th>ISBN</th>
+                <th>Ação</th>
+            </tr>
+        </table>
+    </section>
+
+    <script type="text/javascript" src="./main.js"></script>
+</body>
+
+</html>
